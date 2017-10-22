@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Painter</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.min.css">        
+        <link rel="stylesheet" href="controller.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="cont col-lg=4 col-md-4 col-sm-8 col-xs-12">
+                <button id="btn-cal" class="btn btn-primary" onclick="cal()">Kalibruj</button>
+                <button class="postCal btn btn-danger" onclick="clearCan()">Wyczyść</button>
+                <button class="postCal btn btn-success" id="btnSave" onclick="saveCan()">Zapisz</button>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <h4 id="h11">e</h4>
+            <h4 id="h12">e</h4>
+            <h4 id="h13">e</h4>
+        </div>
+        <div class="row bottom">
+            <button class="postCal btn btn-warning" id="btnUndo" onclick="undo()">Cofinj</button>
+            <div class="cont col-lg=4 col-md-4 col-sm-8 col-xs-12">
+                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="360" data-slider-step="1" data-slider-value="240" data-slider-id="s-slider" id="slider" data-slider-tooltip="hide" data-slider-handle="round" />                        
+                <button id="btn-draw" class="btn btn-info" ontouchstart="touchStart()" ontouchend="isDrawing=false">Maluj</button>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/bootstrap-slider.min.js"></script>        
+        <script src="controller.js"></script>
+    </body>
+</html>

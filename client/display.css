@@ -1,0 +1,16 @@
+#canvas{
+    border: 3px solid #007bff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #ffffff;
+}
+#imgDL{
+    display: none;
+}
+#inputR{
+    width: 100%;
+}

@@ -1,0 +1,50 @@
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+.btn{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.cont{
+    margin: 0 auto;
+}
+.row{
+    padding: 10px;
+    margin: 0;
+}
+#btn-draw{
+    padding: 50px 12px 50px 12px;
+    font-size: 40px;
+    margin-top: 10px;
+}
+#btn-cal{
+    font-size: 25px;
+}
+.bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 35px;
+}
+.postCal{
+    display: none;
+    font-size: 25px;
+    width: 40%;
+}
+#btnSave{
+    float: right;
+}
+#btnUndo{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#s-slider{
+    width: 95%;
+}
+#s-slider .slider-selection {
+	background: blue;
+}
+#s-slider .slider-handle {
+	background: blue;
+}
