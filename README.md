@@ -1,2 +1,2 @@
 # painter
-Simple paining web app
+Simple painting web app
